@@ -2,6 +2,52 @@
     position: fixed;
     z-index: 5;
     right: 2rem;
-    bottom:2rem
-
+    bottom:5rem;
+    background-color: var(--secondary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.top-btn{
+    position: fixed;
+    z-index: 10000;
+    right: 2rem;
+    bottom: 9rem;
+    background-color: var(--secondary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+/* 예전 클래스 이름을 쓴 경우에도 대비 */
+.second-btn{
+    position: fixed;
+    z-index: 10000;
+    right: 2rem;
+    bottom: 4rem;
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+/* 새로 추가된 두 번째 버튼(Hello 이동) */
+.talk-btn{
+    border: 3px solid red;
+    position: fixed;
+    z-index: 10000;
+    right: 2rem;
+    bottom: 0rem; /* 위로가기 버튼 위쪽에 배치 */
+    cursor: pointer;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    font-size: 15px;
+}
+.btn-all{
+    border: 3px solid green;
 }

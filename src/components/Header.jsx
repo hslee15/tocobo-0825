@@ -10,8 +10,6 @@ const Header = () => {
 
   return (
     <div>
-
-
       <header>
         <div className="inner">
           <Nav />

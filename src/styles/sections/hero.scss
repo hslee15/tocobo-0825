@@ -1,11 +1,14 @@
-.hero-container{
+.hero-container {
     height: 90rem;
-    .swiper{
+
+    .swiper {
         height: 100%;
-        .swiper-slide{
+
+        .swiper-slide {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+
             .inner {
                 display: flex;
                 align-items: center;
@@ -13,75 +16,100 @@
 
             }
         }
+
         .hs-1 {
             h2.tit {
                 color: var(--main-slider01-tit);
             }
+
             p.txt {
-              
+
                 color: var(--main-slider01-sub);
             }
         }
+
         .hs-2 {
             h2.tit {
                 color: var(--main-slider02-tit);
             }
+
             p.txt {
-              
+
                 color: var(--main-slider02-sub);
             }
         }
+
         .hs-3 {
             h2.tit {
                 color: var(--main-slider03-tit);
             }
+
             p.txt {
-              
+
                 color: var(--main-slider03-sub);
             }
-            a.btn{
-                &:after{
+
+            a.btn {
+                &:after {
                     background-color: var(--main-slider03-tit);
                 }
-                &:hover{
-                    color: var(--bg);
+
+                &:hover {
+                    color: var(--bg)
                 }
             }
         }
+
         .hs-4 {
             h2.tit {
                 color: var(--main-slider04-tit);
             }
+
             p.txt {
-              
+
                 color: var(--main-slider04-sub);
             }
+
+            a.btn {
+                &:after {
+                    background-color: var(--main-slider04-tit);
+                }
+
+                &:hover {
+                    color: var(--bg)
+                }
+            }
         }
-        .hero-nav{
+
+        .hero-nav {
             position: absolute;
             left: 7.5vw;
             bottom: 8.7rem;
             display: flex;
             align-items: center;
             z-index: 3;
+
             .arr-prev,
-            .arr-next{
+            .arr-next {
                 width: 5rem;
                 height: 1.7rem;
-                background-color: aliceblue;
+
                 font-size: 0;
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
                 cursor: pointer;
             }
-            .arr-prev{
+
+            .arr-prev {
                 background-image: url(/img/icon_main_ban_arrow_prev.svg);
             }
-            .arr-next{
+
+            .arr-next {
                 background-image: url(/img/icon_main_ban_arrow_next.svg);
             }
-            .swiper-pagination-fraction{
+
+            .swiper-pagination-fraction {
                 width: 5rem;
                 height: 5rem;
                 margin: 0 2rem;
@@ -89,28 +117,30 @@
                 font-size: 0;
                 color: var(--bg);
                 font-family: "Florencesans", "Noto Sans KR";
-                .swiper-pagination-current{
+
+                .swiper-pagination-current {
                     position: absolute;
                     font-size: 2.2rem;
                     left: 0;
                     top: 0;
                 }
-                .swiper-pagination-total{
+
+                .swiper-pagination-total {
                     position: absolute;
                     font-size: 2.2rem;
                     bottom: 0;
                     right: 0;
                 }
-                &:after{
-                    content: "";
+                &:after {
+                    content:"";
                     display: block;
                     width: 1px;
                     background-color: var(--bg);
                     height: 50px;
                     position: absolute;
                     left: 10%;
-                    top: 50%;
-                    transform: rotate(45deg) translate(-50%, -50%);
+                    top: 40%;
+                    transform: rotate(45deg) translate(-50%,-50%);
                 }
             }
         }

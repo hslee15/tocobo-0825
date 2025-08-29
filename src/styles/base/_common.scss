@@ -7,6 +7,16 @@
             top: 0;
         }
     }
+    &.scrolled{
+        header{
+            background: #fcffff;
+            background: linear-gradient(180deg, rgba(252, 255, 255, 1) 41%, rgba(255, 255, 255, 0) 100%);        
+        }
+        .fixed-top{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
     .Section {
         padding: 6rem 0;
@@ -31,6 +41,7 @@
 h2.tit {
     font-size: 7.3rem;
     font-weight: 200;
+    line-height: 1;
 }
 p.txt {
     font-size: 2.1rem;

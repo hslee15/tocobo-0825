@@ -1,53 +1,39 @@
-.top-btn{
+.fixed-top{
     position: fixed;
     z-index: 5;
     right: 2rem;
     bottom:5rem;
-    background-color: var(--secondary);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.top-btn{
-    position: fixed;
-    z-index: 10000;
-    right: 2rem;
-    bottom: 9rem;
-    background-color: var(--secondary);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-}
-/* 예전 클래스 이름을 쓴 경우에도 대비 */
-.second-btn{
-    position: fixed;
-    z-index: 10000;
-    right: 2rem;
-    bottom: 4rem;
-    background-color: red;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    display: grid;
-    place-items: center;
-}
-/* 새로 추가된 두 번째 버튼(Hello 이동) */
-.talk-btn{
-    border: 3px solid red;
-    position: fixed;
-    z-index: 10000;
-    right: 2rem;
-    bottom: 0rem; /* 위로가기 버튼 위쪽에 배치 */
-    cursor: pointer;
     text-align: center;
-    color: red;
-    text-decoration: none;
-    font-size: 15px;
-}
-.btn-all{
-    border: 3px solid green;
+    opacity: 0;
+    transition: all .3s .5s;
+    transform: translateY(3rem);
+
+    >*{
+        display: block;
+
+    }
+    .top-btn{
+        width: 5.6rem;
+        height: 5.6rem;
+        background: var(--secondary) no-repeat url(/img/icon_top.svg) center/40% auto;
+        border-radius: 50%;
+        font-size: 0;
+    }
+    .talk-btn{
+        background-color: red;
+        border-radius: 50%;
+        width: 5.6rem;
+        height: 5.6rem;
+        background: url(/img/icon_talk.svg) no-repeat center contain;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        color: var(--bg);
+        line-height: 5.6rem;
+    }
+    p{
+        color: var(--primary);
+        font-family: "Source Serif 4", serif;        
+        font-style: italic;
+        font-size: 600;
+    }
 }

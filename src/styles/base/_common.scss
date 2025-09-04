@@ -1,18 +1,20 @@
 .app-container {
     &.up {
-        .TopBanner{
-            top:-110%
+        .TopBanner {
+            top: -110%
         }
+
         header {
             top: 0;
         }
     }
-    &.scrolled{
-        header{
-            background: #fcffff;
-            background: linear-gradient(180deg, rgba(252, 255, 255, 1) 41%, rgba(255, 255, 255, 0) 100%);        
+
+    &.scrolled {
+        header {
+            background: #ffffff;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 1) 24%, rgba(255, 255, 255, 0) 100%);
         }
-        .fixed-top{
+        .fixed-top {
             opacity: 1;
             transform: translateY(0);
         }
@@ -20,12 +22,30 @@
 
     .Section {
         padding: 6rem 0;
+        overflow: hidden;
+        position: relative;
+
         &#Hero {
             padding: 0;
         }
         &#Collection{
             background-color: var(--bg2);
             padding: 10rem 0;
+        }
+        &#Skincare{
+            padding: 20rem 0 0;
+
+            &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 10rem;
+                left: 0;
+                bottom: 0;
+                background-color: var(--bg2);
+                z-index: -1;
+            }
         }
     }
 
@@ -34,7 +54,6 @@
     footer {
         .inner {
             max-width: 128rem;
-            max-width: var(--maxw);
             height: 100%;
             position: relative;
             margin: auto;
@@ -47,11 +66,13 @@ h2.tit {
     font-weight: 200;
     line-height: 1;
 }
+
 p.txt {
     font-size: 2.1rem;
-    list-style:1.2
+    list-style: 1.2
 }
-a.btn{
+
+a.btn {
     display: inline-block;
     margin-top: 3rem;
     padding: 1.7rem 6.8rem;
@@ -62,8 +83,8 @@ a.btn{
     border-radius: 6rem;
     border: .1rem solid transparent;
     transition: all .8s;
-    text-decoration: none;
-    &:after{
+
+    &:after {
         position: absolute;
         content: "";
         width: 100%;
@@ -74,17 +95,20 @@ a.btn{
         top: 0;
         z-index: -1;
         transition: all .5s;
+
     }
-    &:hover{
-        border: .1rem solid var(--secondary);
+
+    &:hover {
+        // border: .1rem solid var(--secondary);
         color: var(--secondary);
 
-        &after{
+        &:after {
             background-color: var(--bg);
         }
     }
-    @keyframes up{
-        from{transform: translateY(0);}
-        to{transform: translateY(2rem);}
-    }
+
+}
+@keyframes up {
+    from{transform: translateY(0)}
+    to{transform: translateY(2rem)}
 }

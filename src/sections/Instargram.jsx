@@ -1,6 +1,6 @@
 import React from 'react'
-import "../styles/sections/instargram.scss"
 import Images from "../util/instar"
+import "../styles/sections/instagram.scss"
 
 const Instargram = () => {
   return (

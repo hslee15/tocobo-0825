@@ -1,4 +1,3 @@
-
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Hero from "./sections/Hero"
@@ -17,7 +16,6 @@ function App() {
   const [topBanner, setTopBanner] = useState("")
 
   const [isScrolled, setIsScrolled] = useState(false)
-
 
   useEffect(() => {
     const handleScroll = () => {

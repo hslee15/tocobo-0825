@@ -1,0 +1,44 @@
+section#Instar {
+    background-color: #EEF8FF;
+    width: 1920px;
+    height: 676px;
+}
+.instar-inner {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .t-wrap{
+        width: 1280px;
+        height: 97px;
+        .tit {
+            font-size: 55px;
+            color: var(--primary);
+            ;
+        }
+        p{
+            margin-top: 22px;
+            font-size: 20px;
+        }
+
+    }
+
+    .sub {
+        font-size: 16px;
+        color: #333;
+        margin: 10px 0 30px 10%;
+        align-self: flex-start;
+    }
+
+    .instar-lst {
+        display: flex;
+        width: 1280px;
+        height: 213px;
+        margin-top: 40px;
+        img {
+            width: 213px;
+            height: 213px;
+        }
+    }
+}

@@ -1,26 +1,28 @@
 import React from 'react'
-import Images from "../util/instar"
-import "../styles/sections/instagram.scss"
-
+import instar from "../util/instar"
+import "../styles/sections/instargram.scss"
 const Instargram = () => {
   return (
     <div className='inner instar-inner'>
       <div className="t-wrap">
-        <h2 className='tit'>
-          Instagram
+        <h2 className="con-tit">
+          Instargram
         </h2>
-        <p>
-          @tocoba_official
+        <p className="txt-4">
+          @tocobo_official
         </p>
       </div>
       <ul className="instar-lst">
-        {Images.map((img, idx)=>(
-        <li key={idx}>
-          <a href={img.link} target="_blank" rel="noopener noreferrer">
-            <img src={img.src} alt={`instagram-${idx}`} />
-          </a>
-        </li>
-          
+        {instar.map((i) => (
+
+          <li key={i.id}>
+            <a
+              style={{ backgroundImage: `url(${i.image})` }}
+              alt={i.alt}
+              href={i.link}>
+              {i.alt}
+            </a>
+          </li>
         ))}
       </ul>
     </div>

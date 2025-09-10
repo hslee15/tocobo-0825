@@ -1,40 +1,36 @@
 import React from 'react';
-import { logoData, companyData, customerCenterData, footerMenus } from "../util/footer";
-import Nav from './Nav';
+import { logoData, companyData, customerCenterData, footerMenus, socialLinks } from "../util/footer";
 import "../styles/components/footer.scss"
-import "../util/footer"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="inner foot-inner">
         <div className="left">
-          <h3>
-            <a href="#">
+        <h3>
+            <a href={logoData.href}>
               <img src={logoData.src} alt={logoData.alt} />
             </a>
           </h3>
 
           <ul className="foot-lst-1">
-            {companyData.map((item, index) => (
-              <li key={index}>{item}</li>
+            {companyData.map((line, i) => (
+              <li key={i}>{line}</li>
             ))}
-
           </ul>
-
         </div>
 
         <div className="center">
           <div className="foot-menus">
-            {footerMenus.map((menu, index) => (
-              <div key={index}>
+            {footerMenus.map((menu, i) => (
+              <div key={i}>
                 <h4>{menu.title}</h4>
                 <ul>
-                    {menu.items.map((item, idx) => (
-                      <li key={idx}>
-                        <a href={item.href}>{item.label}</a>
-                      </li>
-                    ))}
+                  {menu.items.map((item, j) => (
+                    <li key={j}>
+                      <a href={item.href}>{item.label}</a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             ))}
@@ -47,16 +43,23 @@ const Footer = () => {
           <div>
             <h4>{customerCenterData.title}</h4>
             <p className='cs-box'>
-              <a href={customerCenterData.phoneHref}>
-                {customerCenterData.phone}
+              <a href={customerCenterData.tel.href}>
+                {customerCenterData.tel.value}
               </a>
             </p>
             <p>{customerCenterData.hours}</p>
             <p>{customerCenterData.notice}</p>
-            <a className='talk-btn' href={customerCenterData.talkHref}>
-              {customerCenterData.talkLabel}
+            <a className='talk-btn' href={customerCenterData.talk.href}>
+              {customerCenterData.talk.label}
             </a>
           </div>
+          {/* <ul className='sns-links'>
+            {socialLinks.map((sns) => (
+              <li key={sns.id}>
+                {sns.icon}
+              </li>
+            ))}
+          </ul> */}
         </div>
       </div>
     </footer>

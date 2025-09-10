@@ -2,6 +2,9 @@ footer{
     border-top: .1rem solid var(--primary);
     padding: 7rem 0 5rem;
 
+    a{
+        text-decoration: none;
+    }
     .inner.foot-inner{
         display: flex;
         justify-content: 
@@ -60,6 +63,15 @@ footer{
                 margin-top: 2rem;
                 color: var(--primary);
                 transition: all .3s;
+            }
+            .talk-btn:hover{
+                background-color: var(--primary);
+                color: white;
+            }
+            .sns-links{
+                display: flex;
+                gap: 50px;
+                margin: 20px 20px;
             }
         }
 

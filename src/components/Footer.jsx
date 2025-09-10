@@ -53,13 +53,18 @@ const Footer = () => {
               {customerCenterData.talk.label}
             </a>
           </div>
-          {/* <ul className='sns-links'>
+            <ul className="sns-links">
             {socialLinks.map((sns) => (
               <li key={sns.id}>
-                {sns.icon}
+                <a href={sns.href} 
+                target="_blank" rel="noreferrer noopener" 
+                aria-label={sns.label} 
+                title={sns.label}>
+                  {React.createElement(sns.icon, { size: 22, "aria-hidden": true })}          
+                </a>
               </li>
             ))}
-          </ul> */}
+          </ul>
         </div>
       </div>
     </footer>

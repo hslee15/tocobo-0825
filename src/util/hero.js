@@ -11,7 +11,7 @@ export const heroSlides = [
     ctaText: "미니 선스틱 트리오 보기",
     ctaHref: "/products",
     image: {
-      desktop: img("main__d_1.png"),
+      desktop: img("main_d_1.png"),
       mobile: img("main_mo_1.jpg"),
     },
     alt: "비건 스킨케어 히어로 배너",
@@ -64,3 +64,7 @@ export const heroSlides = [
     order: 4,
   },
 ];
+
+// 활성 슬라이드만 가져오기
+export const getActiveHeroSlides = () =>
+  heroSlides.filter(s => s.active).sort((a, b) => a.order - b.order);

@@ -1,6 +1,8 @@
 import React from 'react'
 import {helloData} from '../util/hello'
 import "../styles/sections/hello.scss"
+
+
 const Hello = () => {
   return (
     <div className='inner hello-inner'>

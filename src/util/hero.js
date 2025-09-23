@@ -11,7 +11,7 @@ export const heroSlides = [
     ctaText: "미니 선스틱 트리오 보기",
     ctaHref: "/products",
     image: {
-      desktop: img("main_d_1.png"),
+      desktop: img("main__d_1.png"),
       mobile: img("main_mo_1.jpg"),
     },
     alt: "비건 스킨케어 히어로 배너",

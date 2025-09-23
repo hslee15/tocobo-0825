@@ -14,15 +14,13 @@
                 align-items: center;
                 max-width: 160rem;
 
-                @media screen and (max-width:1111px) {
+                @media screen and (max-width:1111px){
                     .t-wrap{
                         position: absolute;
                         left: 2rem;
-                        bottom: 12.5rem;
+                        bottom: 15rem;
                     }
                 }
-
-
             }
         }
 
@@ -153,12 +151,12 @@
                 }
             }
 
-            @media screen and (max-width:1111px) {
-                button:3.9rem;
+            @media screen and (max-width:1111px){
+                bottom: 3.9rem;
                 left: 2rem;
 
                 .arr-prev,
-                .arr-next{
+                .arr-next {
                     width: 4rem;
                 }
                 .arr-prev{
@@ -170,7 +168,7 @@
                 .swiper-pagination-fraction{
                     color: var(--primary);
 
-                    &:after{
+                    &::after{
                         background-color: var(--primary);
                     }
                 }
